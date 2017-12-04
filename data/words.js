@@ -34,6 +34,7 @@ var data = [
   [require('./words/people/femaleNames'), 'FemaleName'],
   [require('./words/people/honorifics'), 'Honorific'],
   [require('./words/people/people'), 'Person'],
+  [require('./words/people/persianNames'), 'PersianName'],
   //verbs
   [require('./words/verbs/infinitives'), 'Infinitive'],
   [require('./words/verbs/verbs'), 'Verb'],
