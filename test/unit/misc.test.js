@@ -53,6 +53,10 @@ test('misc:', function(t) {
   var r = nlp('Homer, have you been eating that sandwich again?').terms().slice(0, 3)
   t.equal(r.out('text'), 'Homer, have you', 'result.slice')
 
+  var str = 'my phone number is +90 555 555 55 55';
+  var m = nlp(str)
+  t.equal(m.phoneNumbers().out('normal'), '+90 555 555 55 55', str)
+
   // str = 'men go';
   // m = nlp(str).sentences().toPastTense().nouns().toSingular();
   // t.equal(m.out('normal'), 'a man went', str);
